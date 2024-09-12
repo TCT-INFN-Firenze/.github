@@ -30,6 +30,7 @@ sudo reboot
 ## Software Installation
 Install the necessary software:
 - **Pip**, **Git** and **Vim**:
+  
   Run the following commands to install Pip, Git, Vim, and Python virtual environment tools:
   ```bash
   sudo apt-get install python3-pip git-all vim python3.11-venv
