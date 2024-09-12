@@ -1,4 +1,32 @@
-# Welcome to TCT- INFN Firenze
+# Organization Setup Guide
+This guide explains how to set up a development environment from a freshly formatted computer, including setting up Git, SSH keys, Docker, and SSH tunneling for remote access.
+
+---
+
+## Table of Contents
+1. [User Setup](#user-setup)
+2. [Software Installation](#software-installation)
+3. [Virtual Environment Setup](#virtual-environment-setup)
+4. [Docker Setup](#docker-setup)
+5. [SSH Key Setup](#ssh-key-setup)
+6. [SSH Tunneling](#ssh-tunneling)
+7. [Troubleshooting](#troubleshooting)
+
+---
+
+## User Setup
+
+**Add User to Sudoers List**
+
+Log in as `root` and add the current user to the sudoers list:
+```bash
+su
+sudo adduser <username> sudo
+sudo reboot
+```
+
+
+
 This GitHub Organization is meant to manage the code for the Transient Current Technique experimental setup developed by the Florence Group of INFN.
 
 The repositories allow to
