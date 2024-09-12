@@ -16,7 +16,7 @@ This guide explains how to set up a development environment from a freshly forma
 
 ## User Setup
 
-**Add User to Sudoers List**
+### Add User to Sudoers List
 
 Log in as `root` and add the current user to the sudoers list:
 ```bash
@@ -25,7 +25,16 @@ sudo adduser <username> sudo
 sudo reboot
 ```
 
+---
 
+## Software Installation
+Install the necessary software:
+- **Pip**, **Git** and **Vim**:
+  Run the following commands to install Pip, Git, Vim, and Python virtual environment tools:
+  ```bash
+  sudo apt-get install python3-pip git-all vim python3.11-venv
+  ```
+  
 
 This GitHub Organization is meant to manage the code for the Transient Current Technique experimental setup developed by the Florence Group of INFN.
 
