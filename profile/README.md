@@ -117,17 +117,30 @@ Install the necessary software:
 
    If you are frequently connecting from a specific machine, create an SSH config file on the connecting computer (`~/.ssh/config`):
    ```text
-   Prova
+   Host alias
+     Hostname 172.16.255.255
+     Port 25
+     User name
+     LocalForward 8000 192.168.1.255:8000
    ```
+   - **Host**: The alis to use for SSH connection (`ssh alias`).
+   - **Hostname**: The IP of the remote router (change 255 with the actual IP).
+   - **Port**: The router's port.
+   - **User**: The username of the remote machine.
+   - **LocalForward**: Maps a remote machine's port to the local machine allowing access to services.
 
+5. **Fix SSH Known Hosts Errors**:
 
-This GitHub Organization is meant to manage the code for the Transient Current Technique experimental setup developed by the Florence Group of INFN.
+   If you get connection errors, open the `~/.ssh/known_hosts` file and remove any lines related to the problematic remote machine. Then reconnect with `ssh alias`.
 
-The repositories allow to
-* Run servers with API to control HV, Motors and a Camera
-* Remotely set the most relevant Camera parameters, save a snapshot, and make a fast measurement of the laser sport size
-* Remotely move the Motors and set the relevant parameters
-* Remotely set and read HV
+---
+
+## Troubleshooting
+- **SSH Tunnel Not Working**:
+
+  Check the **SSH Config** file and ensure the correct IP and port numbers are used.
+
+---
 
 The content of this organization is currently Private. 
 
