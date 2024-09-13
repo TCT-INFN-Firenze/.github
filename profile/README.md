@@ -95,6 +95,7 @@ Install the necessary software:
 ---
 
 ## SSH Tunneling
+### On the Host Computer
 1. **Install OpenSSH Server**:
 
    To enable SSH access to your host computer:
@@ -106,14 +107,15 @@ Install the necessary software:
    - Log in using the router's username and password.
    - Save the device under **Network/LAN/Address Reservation**.
    - Assign a unique external port in **Transmission/NAT/Virtual Servers**.
-  
+
+### On the Client Computer
 3. **Configure SSH for Remote Connections**:
 
    Set up passwordless SSH by adding the public key from the connecting machine into the `authorized_keys` file of the machine you are accessing:
    ```bash
-   # this command should be executed on the connecting computer
    cat ~/.ssh/id_rsa.pub | ssh <remote_user>@<remote_host> "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
    ```
+   `remote_user` and `remote_host` refer to the Host computer.
 
 4. **SSH Config File Setup**:
 
