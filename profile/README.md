@@ -135,7 +135,7 @@ Install the necessary software:
 
 5. **Fix SSH Known Hosts Errors**:
 
-   If you get connection errors, open the `~/.ssh/known_hosts` file and remove any lines related to the problematic remote machine. Then reconnect with `ssh alias`.
+   If you get connection errors, open the `~/.ssh/known_hosts` file and remove any lines related to the problematic host machine. Then reconnect with `ssh alias`.
 
 ---
 
