@@ -1,6 +1,10 @@
 # Organization Setup Guide
 This guide explains how to set up a development environment from a freshly formatted computer, including setting up Git, SSH keys, Docker, and SSH tunneling for remote access.
 
+The content of this organization is currently Private. 
+
+If you want to access the repositories, please contact fabio.davolio@fi.infn.it
+
 ---
 
 ## Table of Contents
@@ -145,7 +149,3 @@ Install the necessary software:
   Check the **SSH Config** file and ensure the correct IP and port numbers are used.
 
 ---
-
-The content of this organization is currently Private. 
-
-If you want to access the repositories, please contact fabio.davolio@fi.infn.it
