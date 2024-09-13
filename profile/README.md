@@ -85,6 +85,7 @@ Install the necessary software:
    ```bash
    ssh-keygen -t ed25519 -C "github_email@example.com"
    ```
+   The passphrase will be asked whenever it is required to access the key. It is optional.
 
 3. **Add the SSH Key to GitHub**:
    - Open GitHub, click on your profile picture, and go to **Settings**.
