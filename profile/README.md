@@ -111,6 +111,7 @@ Install the necessary software:
 
    Set up passwordless SSH by adding the public key from the connecting machine into the `authorized_keys` file of the machine you are accessing:
    ```bash
+   # this command should be executed on the connecting computer
    cat ~/.ssh/id_rsa.pub | ssh <remote_user>@<remote_host> "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
    ```
 
