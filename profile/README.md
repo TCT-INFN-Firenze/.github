@@ -67,7 +67,7 @@ Install the necessary software:
    ```bash
    sudo groupadd docker
    sudo gpasswd -a $USER docker
-   newgrp docker
+   sudo reboot
    ```
 
 ---
