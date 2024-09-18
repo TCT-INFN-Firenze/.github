@@ -37,7 +37,7 @@ Install the necessary software:
   
   Run the following commands to install Pip, Git, Vim, and Python virtual environment tools:
   ```bash
-  sudo apt-get install python3-pip git-all vim python3.11-venv
+  sudo apt-get install python3-pip git-all vim python3.11-venv -y
   ```
 
 ---
