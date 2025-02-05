@@ -104,7 +104,7 @@ Install the necessary software:
 
    To enable SSH access to your host computer:
    ```bash
-   sudo apt-get install openssh-server
+   sudo apt-get install openssh-server -y
    ```
 2. **Configure Router for External Access**:
    - Open your router's settings by typing `192.168.1.1` in your browser.
