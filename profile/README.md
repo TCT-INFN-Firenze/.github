@@ -99,7 +99,7 @@ Install the necessary software:
 ---
 
 ## SSH Tunneling
-### On the Host Computer
+### On the Host Computer (the one you want to access)
 1. **Install OpenSSH Server**:
 
    To enable SSH access to your host computer:
@@ -112,7 +112,7 @@ Install the necessary software:
    - Save the device under **Network/LAN/Address Reservation**.
    - Assign a unique external port in **Transmission/NAT/Virtual Servers**.
 
-### On the Client Computer
+### On the Client Computer (the one from you access)
 3. **Configure SSH for Remote Connections**:
 
    Set up passwordless SSH by adding the public key from the connecting machine into the `authorized_keys` file of the machine you are accessing:
@@ -131,7 +131,7 @@ Install the necessary software:
      User name
      LocalForward 8000 192.168.1.255:8000
    ```
-   - **Host**: The alis to use for SSH connection (`ssh alias`).
+   - **Host**: The alis to use for SSH connection (e.g. `ssh alias`).
    - **Hostname**: The IP of the remote router (change 255 with the actual IP).
    - **Port**: The router's port.
    - **User**: The username of the remote machine.
