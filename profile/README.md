@@ -3,7 +3,7 @@ This guide explains how to set up a development environment from a freshly forma
 
 The content of this organization is currently Private. 
 
-If you want to access the repositories, please contact fabio.davolio@fi.infn.it
+If you want to access the repositories, please contact fabio.davolio.1997@gmail.com
 
 ---
 
