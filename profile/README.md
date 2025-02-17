@@ -12,9 +12,10 @@ If you want to access the repositories, please contact fabio.davolio.1997@gmail.
 2. [Software Installation](#software-installation)
 3. [Virtual Environment Setup](#virtual-environment-setup)
 4. [Docker Setup](#docker-setup)
-5. [SSH Key Setup](#ssh-key-setup)
-6. [SSH Tunneling](#ssh-tunneling)
-7. [Troubleshooting](#troubleshooting)
+5. [Jupyter Notebook](#jupyter-notebook)
+6. [SSH Key Setup](#ssh-key-setup)
+7. [SSH Tunneling](#ssh-tunneling)
+8. [Troubleshooting](#troubleshooting)
 
 ---
 
@@ -37,7 +38,7 @@ Install the necessary software:
   
   Run the following commands to install Pip, Git, Vim, and Python virtual environment tools:
   ```bash
-  sudo apt-get install python3-pip git-all vim python3.11-venv -y
+  sudo apt-get install python3-pip git-all vim python3.11-venv screen -y
   ```
 
 ---
@@ -74,6 +75,16 @@ Install the necessary software:
    sudo reboot
    ```
 
+---
+## Jupyter Notebook
+1. **Install Jupyter Notebook**
+   ```bash
+   pip install jupyter
+   ```
+2. **Run jupyter**
+   ```bash
+   jupyter notebook --no-browser
+   ```
 ---
 
 ## SSH Key Setup
